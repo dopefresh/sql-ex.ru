@@ -41,12 +41,13 @@ A	1752	Laptop
 E	2112	PC
 E	2113	PC
 
------------RESULT--------------
+-----------DESIRED RESULT FOR PC--------------
 maker models
 A   2
 B   1
 E   1
 -------------------------------
+
 
 WITH pcCTE AS (
     SELECT Product.maker AS maker, COUNT(DISTINCT PC.model) AS amount
